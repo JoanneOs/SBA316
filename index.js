@@ -26,3 +26,23 @@ submitButton.addEventListener('click', (e) => {
     e.preventDefault();
     alert('Form submitted successfully!');
 });
+
+// Adding more functionality below:
+//Modify the HTML or text content of at least one element in response to user
+//interaction using innerHTML
+//10% 
+const nameInput=document.getElementById('name');
+submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    //basic validation for emtpy input
+    if (nameInput.ariaValueMax.trim()=''){
+        alert('pleae enter your name.');
+    }else{
+        document.getElementById('welcome-message')='thanks', <strong>${nameInput.value</strong>;
+    }
+});
+
+
+
+
